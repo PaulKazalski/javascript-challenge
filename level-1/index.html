@@ -6,12 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-  <h1>Open the Chrome Inspector Console!</h1>
-</body>
 
+  <div class="header">
+    <h1>Welcome to the UFO sight</h1>
+    <p>Please use the drop down list to search by date</p>
+    <div class="dropdown">
+      <button class="dropbtn">Date</button>
+        <div class="dropdown-content">
+    
+          <a>01/01/2010</a>
+          <a href="visual2.html">visual2</a>
+          <a href="visual3.html">visual3</a>
+          <a href="visual4.html">visual4</a>
+
+        </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Student Grades -->
+        <table class="grades table">
+          <thead>
+            <tr>
+              <th>Datetime</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Country</th>
+              <th>Shape</th>
+              <th>Duration</th>
+              <th>Comments</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+</body>
 <script src="index.js"></script>
+<script src="data.js"></script>
 
 </html>
+
