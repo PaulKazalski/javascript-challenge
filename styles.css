@@ -1,0 +1,137 @@
+body {
+    background-color: midnightblue;
+}
+
+.header{
+  background-color: darkgray;
+  color: midnightblue;
+  font-family:'Arial';
+  width: 1000px;
+  height: 200px;
+  text-align: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header h1{
+  width: 1000px;
+  display: list-item;
+}
+
+.header img {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header p{
+  width: 1000px;
+  margin-top: 10px;
+  display: list-item;
+  font-size: 20px;
+}
+
+.table {
+  width: 1000px;
+  
+}
+
+
+@media (max-width: 1200px) {
+  .table {
+   width: 850px;
+ } }
+
+ @media (max-width: 1000px) {
+  .table {
+   width: 700px;
+ } }
+
+.container {
+  background: white;
+}
+
+
+/* *****              ***** */
+/* ***** DROPDOWN CSS ***** */
+/* *****              ***** */
+
+.dropbtn {
+  font-size: 25px;
+  font-weight:bold;
+  font-family: 'Times New Roman', Times, serif;
+  border: gray;
+}
+
+/* Create space for the dropdown center */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+  
+  /* Define the content of the dropdown list */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightgrey;
+  min-width: 20px;
+  z-index: 1;
+}
+
+  
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
+  
+/* *****            ***** */
+/* ***** NAVBAR CSS ***** */
+/* *****            ***** */
+
+/* Defining the Navbar */
+.navbar {
+  height: 65px;
+  width: 1000px;
+  background: palegoldenrod;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Defines how the navbar list items will look */
+.navbar li {
+  display: inline-block;
+  align-items: center;
+  padding: 5px;
+  margin-left: 70px;
+  cursor: pointer;
+  background: midnightblue;
+}
+
+/* Defines the text style and color of the anchors in the list items */
+.navbar li a {
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  text-align: right;
+}
+
+/* Defines the "home" anchor, which must look different from the others */
+.gohome {
+  background-color: mediumaquamarine;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+}
+
+/* Defining the link anchor for the .gohome button */
+.gohome a {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+
+
+
+

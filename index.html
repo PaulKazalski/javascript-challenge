@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>They're out there</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Welcome to the UFO sight</h1>
+    <a target = "UFO" href="image.jpg">
+      <img src = "image.jpg" alt= "Scully">
+    </a>  
+    <p>Please select the date from the dropdown tab below</p>    
+  </div>  
+ 
+  <div class="containera">
+    <nav class="navbar">
+      <ul>
+        <li>
+          <div class="dropdown" id = "byDate">
+            <button class="dropbtn" id = "byDate1">By Date</button>
+            <div class="dropdown-content" id = "byDate2">
+            
+            <a id = "byDate3">All Dates</a>
+            <a id = "byDate3">1/1/2010</a>
+            <a id = "byDate3">1/2/2010</a>
+            <a id = "byDate3">1/3/2010</a>
+            <a id = "byDate3">1/4/2010</a>
+            <a id = "byDate3">1/5/2010</a>
+            <a id = "byDate3">1/6/2010</a>
+            <a id = "byDate3">1/7/2010</a>
+            <a id = "byDate3">1/8/2010</a>
+            <a id = "byDate3">1/9/2010</a>
+            <a id = "byDate3">1/10/2010</a>
+            <a id = "byDate3">1/11/2010</a>
+            <a id = "byDate3">1/12/2010</a>
+            <a id = "byDate3">1/13/2010</a>
+
+            </div>
+          </div>
+        </li> 
+        
+        <li>
+          <div class="dropdown" id = "byState">
+            <button class="dropbtn" id = "byState1">By State</button>
+            <div class="dropdown-content" id = "byState2">
+            
+            <a id = "byState3">ALL</a>
+            <a id = "byState3">al</a>
+            <a id = "byState3">ak</a>
+            <a id = "byState3">ar</a>
+            <a id = "byState3">az</a>
+            <a id = "byState3">ca</a>
+            <a id = "byState3">co</a>
+            <a id = "byState3">ct</a>
+            <a id = "byState3">fl</a>
+            <a id = "byState3">ga</a>
+            <a id = "byState3">ia</a>
+            <a id = "byState3">in</a>
+            <a id = "byState3">ks</a>
+            <a id = "byState3">ky</a>
+            <a id = "byState3">la</a>
+            <a id = "byState3">ma</a>
+            <a id = "byState3">md</a>
+            <a id = "byState3">mi</a>
+            <a id = "byState3">mo</a>
+            <a id = "byState3">ms</a>
+            <a id = "byState3">nc</a>
+            <a id = "byState3">nh</a>
+            <a id = "byState3">nj</a>
+            <a id = "byState3">nm</a>
+            <a id = "byState3">ny</a>
+            <a id = "byState3">oh</a>
+            <a id = "byState3">on</a>
+            <a id = "byState3">or</a>
+            <a id = "byState3">pa</a>
+            <a id = "byState3">sc</a>
+            <a id = "byState3">tn</a>
+            <a id = "byState3">tx</a>
+            <a id = "byState3">va</a>
+            <a id = "byState3">wa</a>
+            <a id = "byState3">wi</a>
+            <a id = "byState3">wv</a>
+            </div>
+          </div>
+        </li> 
+
+        <li>
+      
+          <div class="dropdown" id = "byCountry">
+            <button class="dropbtn" id = "byCountry1">By Ctry</button>
+            <div class="dropdown-content" id = "byCountry2">
+            
+            <a id = "byCountry3">All Countries</a>
+            <a id = "byCountry3">us</a>
+            <a id = "byCountry3">ca</a>
+            
+            </div>
+          </div>
+        </li> 
+
+        <li>
+      
+          <div class="dropdown" id = "byShape">
+            <button class="dropbtn" id = "byShape1">By Shape</button>
+            <div class="dropdown-content" id = "byShape2">
+              
+              <a id = "byShape3">ALL SHAPES</a>
+              <a id = "byShape3">circle</a>
+              <a id = "byShape3">light</a>
+              <a id = "byShape3">triangle</a>
+              <a id = "byShape3">unknown</a>
+              <a id = "byShape3">fireball</a>
+              <a id = "byShape3">formation</a>
+              <a id = "byShape3">other</a>
+              <a id = "byShape3">sphere</a>
+              <a id = "byShape3">disk</a>
+              <a id = "byShape3">chevron</a>
+              <a id = "byShape3">rectangle</a>
+              <a id = "byShape3">cross</a>
+              <a id = "byShape3">flash</a>
+              <a id = "byShape3">changing</a>
+              <a id = "byShape3">oval</a>
+              <a id = "byShape3">cigar</a>
+              <a id = "byShape3">teardrop</a>
+              <a id = "byShape3">cylinder</a>
+
+            </div>
+          </div>
+        </li> 
+      
+      </ul>
+    </nav>
+  </div>
+  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Student Grades -->
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Datetime</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Country</th>
+              <th>Shape</th>
+              <th>Duration</th>
+              <th>Comments</th>
+
+            </tr>
+          </thead>
+          <tbody id = "body">
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</html>
+
