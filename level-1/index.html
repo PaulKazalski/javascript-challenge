@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Welcome to the UFO sight</h1>
+    <p>Please select the date from the dropdown tab below</p>
+ 
+    <div class="containera">
+      <nav class="navbar">
+        <ul>
+          <li>
+            <div class="dropdown" id = "byDate">
+              <button class="dropbtn" id = "byDate1">By Date</button>
+              <div class="dropdown-content" id = "byDate2">
+             
+              <a id = "byDate3">All Dates</a>
+              <a id = "byDate3">1/1/2010</a>
+              <a id = "byDate3">1/2/2010</a>
+              <a id = "byDate3">1/3/2010</a>
+              <a id = "byDate3">1/4/2010</a>
+              <a id = "byDate3">1/5/2010</a>
+              <a id = "byDate3">1/6/2010</a>
+              <a id = "byDate3">1/7/2010</a>
+              <a id = "byDate3">1/8/2010</a>
+              <a id = "byDate3">1/9/2010</a>
+              <a id = "byDate3">1/10/2010</a>
+              <a id = "byDate3">1/11/2010</a>
+              <a id = "byDate3">1/12/2010</a>
+              <a id = "byDate3">1/13/2010</a>
+
+              </div>
+            </div>
+          </li>  
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Student Grades -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Datetime</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Country</th>
+              <th>Shape</th>
+              <th>Duration</th>
+              <th>Comments</th>
+
+            </tr>
+          </thead>
+          <tbody id = "body">
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</html>
+
